@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-	"""r = requests.get("http://api.ihackernews.com/page")
+	r = requests.get("http://api.ihackernews.com/page")
 	r = r.json()
 	hacker_news_dict = {'name': 'hackernews', 'children':[]}
 	num = 0
@@ -23,7 +23,7 @@ def hello_world():
 	print hacker_news_dict, r
 
 	with open ('%s/static/flare.json' % os.path.abspath(os.path.dirname(__file__)),'w') as handle:
-		handle.write(r)"""
+		handle.write(r)
 
 	return render_template("index.html")
 

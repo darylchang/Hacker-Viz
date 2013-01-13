@@ -26,6 +26,7 @@ def hello_world():
 		handle.write(r)
 
 	return render_template("index.html")
+	
 
 if __name__ == '__main__':
     app.run(debug=True)

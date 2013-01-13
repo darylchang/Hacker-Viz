@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		{% for entry in r["items"]%}
+			<a href="{{ entry['url'] }}"> {{ entry["title"] }} </a><br/>
+		{% endfor %}
+	</div>
+</body>
+</html>
